@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMBTN Buyer Bank — Closed Beer League</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0d0d0d;color:#ddd;font-family:system-ui,-apple-system,'Segoe UI',sans-serif;font-size:14px;line-height:1.65}
+.hdr{padding:32px 40px 24px;border-bottom:1px solid #222;display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap}
+.brand{font-size:44px;font-weight:900;letter-spacing:4px;color:#d4ff00;text-transform:uppercase;line-height:1}
+.hdr-meta{font-size:11px;color:#555;text-transform:uppercase;letter-spacing:1.5px;padding-bottom:6px;font-family:monospace}
+.hdr-meta span{color:#d4ff00}
+nav{display:flex;flex-wrap:wrap;gap:2px;padding:0 40px;border-bottom:1px solid #222;background:#0d0d0d}
+.nb{background:none;border:none;color:#555;font-family:monospace;font-size:11px;padding:12px 14px;cursor:pointer;text-transform:uppercase;letter-spacing:1px;border-bottom:2px solid transparent;transition:all .15s;white-space:nowrap}
+.nb:hover{color:#bbb}
+.nb.active{color:#d4ff00;border-bottom-color:#d4ff00}
+.wrap{padding:36px 40px;max-width:1080px}
+.profile{display:none}
+.profile.active{display:block}
+.phead{margin-bottom:28px;padding-bottom:20px;border-bottom:1px solid #1e1e1e}
+.pname{font-size:48px;font-weight:900;letter-spacing:1px;line-height:1;text-transform:uppercase}
+.ptags{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.tag{font-size:10px;font-family:monospace;text-transform:uppercase;letter-spacing:.8px;padding:3px 9px;background:#161600;border:1px solid #3a3a00;color:#d4ff00}
+.sec{margin-bottom:24px}
+.slabel{font-family:monospace;font-size:10px;text-transform:uppercase;letter-spacing:2px;color:#d4ff00;margin-bottom:8px}
+.sbody{color:#bbb;font-size:13.5px}
+.sbody ul{list-style:none;display:flex;flex-direction:column;gap:5px}
+.sbody ul li{padding-left:14px;position:relative;color:#aaa}
+.sbody ul li::before{content:"—";position:absolute;left:0;color:#ff5500;font-size:11px}
+.sbody em{color:#eee;font-style:normal}
+.quote{border-left:2px solid #d4ff00;background:#111100;padding:12px 16px;margin:8px 0;font-size:13px;color:#ddd;line-height:1.6}
+.attr{font-size:10px;color:#666;margin-top:5px;font-family:monospace;text-transform:uppercase;letter-spacing:1px}
+.none{color:#444;font-style:italic}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+@media(max-width:720px){
+  .grid2{grid-template-columns:1fr}
+  .hdr,.wrap{padding:20px}
+  nav{padding:0 20px}
+  .pname{font-size:32px}
+}
+</style>
+</head>
+<body>
+<div class="hdr">
+  <div class="brand">AMBTN</div>
+  <div class="hdr-meta">Buyer Bank — <span>Closed Beer League Prospects</span> — <span>10 profiles</span></div>
+</div>
+<nav><button class="nb active" onclick="show(0)">Allan</button><button class="nb" onclick="show(1)">John</button><button class="nb" onclick="show(2)">Kevin</button><button class="nb" onclick="show(3)">Jared</button><button class="nb" onclick="show(4)">Giancarlo</button><button class="nb" onclick="show(5)">Jeff</button><button class="nb" onclick="show(6)">Rich</button><button class="nb" onclick="show(7)">Dom</button><button class="nb" onclick="show(8)">Victor</button><button class="nb" onclick="show(9)">Philip</button></nav>
+<div class="wrap" id="wrap">
+<div class="profile active" id="p0">
+  <div class="phead">
+    <div>
+      <div class="pname">Allan Clark</div>
+      <div class="ptags"><span class="tag">Age 59</span><span class="tag">AA League</span><span class="tag">Defenseman</span><span class="tag">Desk Job</span><span class="tag">Month-to-Month</span><span class="tag">$249/mo</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">59-year-old AA-league defenseman. Started at 5, played through college, returned after a break — never fully recovered prior speed. Playing against D1 players in summer leagues. Lifelong training background (powerlifting, cardio) but can't synthesize it into hockey-specific results. Closed at $249/mo.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Chase down players on the rush. Go end-to-end. Improve top speed and balance.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li>Top speed declined — never recovered from post-break baseline</li><li>Competing against D1 players in summer AA league</li><li><em>"I used to be the fastest and I could chase them down back in the day"</em></li><li>Overwhelming amount of information online — can't filter what's good</li><li>No structured hockey-specific program — doesn't know where to start or what to track</li><li>Tight hips from desk job, shoulder/back issues from posture</li><li>History of injuries: shoulder, back, two hernia surgeries</li><li>Has all the equipment and motivation — missing the blueprint</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>Saw old pricing doc showing $150 option — had to be explained the offer changed</li><li>Chose month-to-month over 3-month upfront due to current bills</li><li>Asked about Android compatibility with the app</li><li>Confirmed 3 sessions/week was realistic given full-time work</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Customized to individual — equipment, schedule, specific needs</li><li>Direct access to coach</li><li>No contract / month-to-month flexibility</li><li>Visible on-ice results quickly</li><li>Edge work and balance specifically addressed</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">Playing against D1 players who are getting faster as he slows down. Has all the tools (equipment, knowledge, history) but no focused hockey-specific plan.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>General powerlifting and cardio — knows the basics, can't make them hockey-specific</li><li>YouTube — overwhelming, hard to filter</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">Month-to-month at $249. Declined 3-month upfront ($650) due to bills. Price-conscious but not resistant.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Solo decision-maker. Moved quickly once pricing and customization were confirmed.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;I used to be the fastest and I could chase them down back in the day. But those days have gotten a little bit behind me.&#8221;<div class="attr">— Allan Clark</div></div><div class="quote">&#8220;Not a focused workout program that specializes exactly for hockey makes it difficult for me to get going — a little overwhelming, doesn't know where to start or what to track.&#8221;<div class="attr">— Allan Clark</div></div><div class="quote">&#8220;I have all the equipment and all that stuff, but it's hard to put it all together in a program and track it and make progress and stay focused.&#8221;<div class="attr">— Allan Clark</div></div><div class="quote">&#8220;I think speed and balance makes up for some skill. And as you age, that advantage goes down.&#8221;<div class="attr">— Allan Clark</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>Lifelong athlete who still competes at high levels — not a beginner, just missing the system</li><li>"You don't have an effort problem. You have a system problem."</li><li>Speed decline framed as recoverable with the right blueprint, not age-determined</li><li>Competing against D1 players — identity is elite even at 59</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">Powerlifting, general cardio, self-directed training. Knows the movements — has been at it for decades.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">Zero hockey-specificity. General fitness doesn't transfer to ice. No structure around programming sequences or performance tracking.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Has the discipline and history but can't figure out how to organize it into a program that actually makes him faster on ice.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Continues to lose steps to D1 players. Goes from being the fastest to getting chased rather than chasing. Identity erosion — the guy who used to dominate now just survives.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p1">
+  <div class="phead">
+    <div>
+      <div class="pname">John Hudspeth</div>
+      <div class="ptags"><span class="tag">Former D1 Athlete</span><span class="tag">New to Hockey &lt;1yr</span><span class="tag">Post-Adductor Surgery</span><span class="tag">B-League</span><span class="tag">3 Kids</span><span class="tag">$399/mo</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">Former high-level baseball player who picked up hockey less than a year ago. Tore both adductors in his first game, had surgery in July, 11 weeks post-op and cleared. Already implementing Bulgarian split squats from Connor's content. Goal: crack top 5 point scorers to prove basketball buddies wrong. Closed at $399/mo same-call via Apple Pay.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Top 5 point scorer in B-league. Prove basketball friends wrong. Explosive feet and third-period stamina.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li><em>"In 30 seconds my lungs are burning"</em> — despite running with college/pro basketball players all day</li><li>Feet feel stuck to the ice — strength and transfer issue</li><li><em>"These other guys are skating around the whole period... and I'm looking back at the bench — get me off the ice"</em></li><li>Post-adductor surgery — managing both adductors, 90% recovered</li><li>Never used skating-specific muscles despite elite athleticism</li><li>Recovery management: balancing 4 ice sessions/week with gym work</li><li>Hotel gyms kill training continuity when traveling</li><li>Nutrition: <em>"I have pretty shit nutrition"</em></li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>Wanted more than weekly check-in — resolved by explaining daily post-session messaging</li><li>No price objection — moved to $399/mo immediately</li><li>Closed via Apple Pay on the call</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Injury-aware customization (adductors) and 3 kids / busy schedule</li><li>Ability to send form videos for feedback</li><li>Accountability for a committed athlete who needs structure, not motivation</li><li>Coach-designed periodization around game days</li><li>Program that adapts while traveling</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">Torn adductors in first-ever game. Surgery. Rehab. Return. Realized his elite athleticism means nothing without hockey-specific transfer. Wanted a system built for his exact situation.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>Self-directed: Bulgarian split squats, single-leg RDLs, Nordic curls, ATG reverse treadmill</li><li>Private skating lessons 2x/week</li><li>Adductor rehab protocol — very dialed in</li><li>Peptide stack ('Wolverine stack'), ice bath, sauna for recovery</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">No friction. $399/month chosen immediately. 'I'm optimistic — let's get 30 days in and make sure we're a good fit.'</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Solo. Fast close. High confidence from prior research — already doing the exercises, wanted to confirm daily comms cadence.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;I can run up and down a court with these basketball dudes all day long. And I get on the ice, man. In 30 seconds, my lungs are burning.&#8221;<div class="attr">— John Hudspeth</div></div><div class="quote">&#8220;I want to see my name on that top 5 list. I want to prove some of my buddies wrong. They call me basketball boy.&#8221;<div class="attr">— John Hudspeth</div></div><div class="quote">&#8220;In my third period, I gotta be able to dominate these guys. They're not fucking moving out there.&#8221;<div class="attr">— John Hudspeth</div></div><div class="quote">&#8220;Three days into doing those Bulgarian split squats... I already feel like just the right kind of stability, the right kind of activation — that similar skating activation.&#8221;<div class="attr">— John Hudspeth</div></div><div class="quote">&#8220;I don't need the motivation. But I would like to be able to send videos or something.&#8221;<div class="attr">— John Hudspeth</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>Elite athlete who discovered hockey late — athleticism is a weapon waiting to be unlocked</li><li>Recovery from injury → comeback story framing</li><li>Top 5 leaderboard goal — tangible, public, identity-driven</li><li>"Your athleticism isn't the problem. The transfer is."</li><li>Proof that effort + system = results (already seeing it with split squats)</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">Self-directed rehab, private skating lessons, advanced recovery tools (ice bath, peptides, sauna), Bulgarian split squats from watching content.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">No periodization. No game-day sequencing. No hockey-specific programming system tying it together. Hitting sessions based on feel, not what the body needs at each phase.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Can run with college and pro athletes on a court. Gets on the ice and can't survive a shift. Physically elite — feeling like a beginner every time he steps on the ice.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Stays 'basketball boy.' Can't crack the leaderboard. Returns each season physically the same, never translating his elite athletic base into hockey output.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p2">
+  <div class="phead">
+    <div>
+      <div class="pname">Kevin Meisner</div>
+      <div class="ptags"><span class="tag">Multi-Sport</span><span class="tag">Fast Straight-Line</span><span class="tag">Mobility-Limited</span><span class="tag">Has Physio</span><span class="tag">Decisive Close</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">High-energy multi-sport athlete (hockey, hardball) with elite physical potential locked behind mobility restrictions. Self-describes as having 'alligator speed' — fast in straight lines, limited in agility and change of direction. Physio confirmed he's 'tight as fuck.' Wants to show up to a specific skate in 2 years and make former OHL/NHL guys ask 'what the fuck happened?' Decisive close — just needed a week to move houses first.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Unlock the speed already there. Become multi-directional, not just straight-line fast. Make former elite players at a specific skate say 'what happened to this guy.'</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li><em>"I'm so tight. If you saw how tight I was, you'd be like holy fuck — if we could open this guy's hips up"</em></li><li>Straight-line fast, can't change direction or explode out of the hole</li><li><em>"I just feel like there's so much that can be unlocked. I just don't know."</em></li><li>Watches internet videos all day — takes bits and pieces, no structure</li><li>Zero hockey-specific training — generic full-body gym work only</li><li>Hamstrings neurologically locked — stretching doesn't fix it</li><li>Ankle mobility limiting skating power output</li><li>Tennis elbow, calf strain — managing multiple smaller issues</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>Moving houses this week — needs one week to get settled</li><li>No price objection whatsoever — explicitly said 'I got money and I got time and I got effort level'</li><li>Asked to have details emailed before committing</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Sports-specific, not generic</li><li>Hockey-specific mobility and agility programming</li><li>Efficiency — doesn't want to waste time</li><li>Baseline video + measurable progress tracking</li><li>Year-round program with no off-season</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">Playing with a former Swedish pro — watching that guy's mohawk and edge work. Decided 'I want to skate with him at some point in my life.' Combined with physio confirming mobility is neurologically locked.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>Generic full-body gym training (3 full-body workouts)</li><li>YouTube research — 'internet machine' — gets bits and pieces</li><li>Physio / acupuncture electrolysis — managing but not unlocking</li><li>Tried every skate sharpening looking for edge advantage</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">No friction. Explicitly said 'I got money and I got time and I got effort level.' Chose email-first to confirm details, not price resistance.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Solo. Very decisive once trust established. Qualified himself strongly. Just needed the house move handled first.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;I have so much in the tank. I'm so tight. If you saw how tight I was, you'd be like holy fuck — if we could open this guy's hips up, there's just so much unlocked high speed sitting in reserve.&#8221;<div class="attr">— Kevin Meisner</div></div><div class="quote">&#8220;I could watch 8 million little videos on the internet machine all day and take little pieces apart and I'll probably get a little bit better. But I'd like to be more efficient.&#8221;<div class="attr">— Kevin Meisner</div></div><div class="quote">&#8220;I want these guys to be like, what the fuck happened? Is this a twin? Like, is this a joke? Where did this come from?&#8221;<div class="attr">— Kevin Meisner</div></div><div class="quote">&#8220;You just tell me how to get my hips and legs dialed in. I'll jump, I'll do sprints, I'll do whatever it takes. Just build me a program and I'll follow it.&#8221;<div class="attr">— Kevin Meisner</div></div><div class="quote">&#8220;I'm okay, I got lots of patience. If this takes two or three years to get to my potential — I don't have an off season. I want a program I can consistently be in.&#8221;<div class="attr">— Kevin Meisner</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>"You have the speed. It's locked."</li><li>Mobility = unlocked speed — most powerful framing for this buyer type</li><li>Generic training vs. sports-specific: the hidden gap in effort athletes</li><li>Neurological tightness concept — Peter Attia angle resonated strongly</li><li>2-year transformation narrative — patience meets relentless effort</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">Generic full-body lifting, YouTube research, physio, acupuncture, every skate sharpening possible.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">General training has zero transfer. Mobility work without strength = short-term gains only. Internet content gives bits and pieces — no system, no sequence, no progression.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Knows he's fast. Knows he's capable. Can skate circles around 25-year-olds on his second skate of the day. Feels like his body is a locked box with the key right in front of him and no instructions.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Shows up to that specific skate in 2 years unchanged. Former OHL/NHL guys never have to wonder. The potential he knows he has sits unrealized.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p3">
+  <div class="phead">
+    <div>
+      <div class="pname">Jared Kohlmann</div>
+      <div class="ptags"><span class="tag">B2 League</span><span class="tag">20-Year Break</span><span class="tag">Research-Oriented</span><span class="tag">Hormozi Fan</span><span class="tag">Wife Approval</span><span class="tag">$1,400/4mo Upfront</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">Returned to hockey after a 20-year break. Tried Hockey Training dot com twice, worked with a personal trainer friend. Understands 'working the V' conceptually. Main issue: stamina declines throughout the game — 'burning his matches' early. Analytical buyer who referenced Hormozi's methodology. Needed wife approval and a follow-up call. Closed at $1,400 for 4 months.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Consistent stamina across a full game. Stop burning best shifts early. Be available when the plays he wants to make actually happen.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li>Stamina declines steadily — 'burning my matches' — only has 2–3 full-effort plays per game</li><li><em>"By the end of the game I'm missing plays I wouldn't miss at the start"</em></li><li>Returned after 20-year break — doesn't have many years left, wants them high quality</li><li>Training only twice/week — <em>"I don't know exactly what to do and that hump is too much to get over"</em></li><li>Previous programs pushed strength, conditioning was an afterthought</li><li><em>"How do I scale after the program ends? They say start the beginning again."</em></li><li>Jack of all trades — mixing Norwegian 4x4, zone 2, self-researched approaches</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>Needed time to consult wife on finances</li><li>Concern: does access end after 4 months? Wanted workouts saved</li><li>Preferred fixed investment over open-ended monthly</li><li>Needed a follow-up call (Thursday) to confirm</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Phase-sequenced system combining strength, conditioning, and speed — not siloed</li><li>Custom schedule around work, family, one game/week</li><li>Clear what-to-do, when-to-do, why-to-do</li><li>Workouts preserved after program ends</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">"I don't have that many years left to play, and I'd like to make them high quality." Progress from self-directed approach is slow — frustration at the ceiling.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>Hockey Training dot com — 2 programs. Strength-heavy, conditioning bolted on, not scalable</li><li>Personal trainer friend (ex-college hockey player) — years ago, not ongoing</li><li>Norwegian 4x4 intervals for VO2 max</li><li>Zone 2 base building</li><li>Self-researched 'working the V' approach</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">Preferred $1,400/4-month upfront over $399/month — fixed investment felt better than 'nebulous ongoing $400/month forever.' Needed wife's sign-off first — financial, not value question.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Analytical and deliberate. Referenced Hormozi positively. Needed to verify workouts persist post-program. Required second call for wife. Strong buy-in on methodology — hesitation was logistical.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;The hockey training one really pushes strength and conditioning is kind of an add-on. But it's not an add-on. And then you finish and you're like — how do I scale? They say start at the beginning. Now I'm going backwards six months for conditioning.&#8221;<div class="attr">— Jared Kohlmann</div></div><div class="quote">&#8220;I feel like I'm becoming a Jack of all trades and master of none.&#8221;<div class="attr">— Jared Kohlmann</div></div><div class="quote">&#8220;I don't know exactly what to do and that hump is a little too much for me to get over to just go do something.&#8221;<div class="attr">— Jared Kohlmann</div></div><div class="quote">&#8220;I don't have that many years left to play, and I'd like to make them high quality.&#8221;<div class="attr">— Jared Kohlmann</div></div><div class="quote">&#8220;A fixed amount is a much easier pill to swallow rather than this nebulous ongoing — I don't know that I can swing $400 a month forever.&#8221;<div class="attr">— Jared Kohlmann</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>Phase sequencing as the differentiator — strength and conditioning together, not separate</li><li>The scalability problem: what happens after generic programs end</li><li>"Working the V" — proof point for Connor's methodology (they already know the concept)</li><li>Finite years left to play → urgency anchor</li><li>Fixed investment as permission to commit — lump sum beats recurring for this buyer</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">Hockey Training dot com x2, personal trainer friend, self-directed Norwegian 4x4, zone 2 cardio, mix-and-match research.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">Every program isolates one system. Strength without conditioning periodization, or conditioning without strength integration. No unified phase-sequenced plan. Scaling problem at program end.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Does the research. Understands the concepts. Still doesn't have a clear system telling him what to do, when, and why — so motivation doesn't convert into sessions.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Plays out remaining hockey years at 60–70% capacity. Understands the theory but never applies a working system. Finishes his comeback having done the reading without the results.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p4">
+  <div class="phead">
+    <div>
+      <div class="pname">Giancarlo McEvenue</div>
+      <div class="ptags"><span class="tag">Closed</span><span class="tag">No Transcript Available</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">Listed as a closed prospect. No call transcript or messaging thread included in the document. Data unavailable for this profile.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">N/A — no transcript available.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><p class="none">No data available.</p></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><p class="none">No data available.</p></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><p class="none">No data available.</p></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">N/A</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><p class="none">No data available.</p></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">N/A</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">N/A</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><p class="none">No quotes available.</p></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><p class="none">No data available.</p></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">N/A</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">N/A</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">N/A</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">N/A</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p5">
+  <div class="phead">
+    <div>
+      <div class="pname">Jeff Berleth</div>
+      <div class="ptags"><span class="tag">C2/C1 League</span><span class="tag">3 Years Hockey</span><span class="tag">Defenseman</span><span class="tag">Nerve Damage</span><span class="tag">Playing Up</span><span class="tag">$399/mo</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">Got into hockey because his son played — son is 13 and now wants nothing to do with him on the ice. Jeff kept going. Moved from D to C2 to C1 over 3 years. Now playing against guys 10+ years younger. Can keep up but not for the full game. High determination, low structure. Sciatic issues, floating rib cartilage, nerve damage in right hand. Already doing split squats from Connor's content. Closed at $399/mo.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Keep up with younger players for the full game. Improve speed and stamina — not just survive, dominate.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li>Playing with guys 10+ years younger — keeps up but can't sustain it for the full game</li><li><em>"I'm not sure what I should be doing, what I shouldn't be doing"</em></li><li><em>"I'm not really structured"</em></li><li>Trying to emulate hockey movements through guesswork — no plan</li><li>Sciatic issues — ongoing chiro visits</li><li>Floating rib cartilage — gets dinged blocking shots as a defenseman</li><li>Nerve damage in right hand — puck falls off stick without feeling it</li><li>Has determination without the matching plan</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>No hard price objection — went straight to monthly</li><li>Asked about body weight training while traveling — confirmed it works</li><li>Minor concern about time with son's ankle injury rehab added to schedule</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Actual structure — not just more effort</li><li>Schedule built around work, kids, and ice times</li><li>Accountability to stay on track</li><li>Body weight / minimal equipment options for travel</li><li>Injury-aware programming (sciatic, rib, nerve damage)</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">Son got into hockey → Jeff got back in → son is now 13 and doesn't want dad on the ice. Jeff kept going. Moved up leagues steadily. Hit a wall where younger players are too much to sustain. Realized effort alone isn't closing the gap.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>Bulgarian split squats (from Connor's content — already doing them)</li><li>Skater hops with 20lb medicine ball</li><li>On-ice lessons from son's power skating coach</li><li>Self-directed home gym work (adjustable dumbbells, 200lbs plates, standard bar)</li><li>Creatine and protein protocol</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">Low resistance. Quote: <em>"Jesus Christ, 400 bucks — I'll snap a stick in men's league and I'm already halfway there."</em> Relatable anchor to what he already spends on hockey.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Solo. Already doing the exercises from Connor's content. High intention throughout. Minor friction on schedule fit, not price or value.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;I've got great determination. I'm just not sure what I should be doing.&#8221;<div class="attr">— Jeff Berleth</div></div><div class="quote">&#8220;I'm not really structured. I just know there are times I should probably be resting more.&#8221;<div class="attr">— Jeff Berleth</div></div><div class="quote">&#8220;I'm keeping up with them but I can't keep up with them for the duration — realistically speaking.&#8221;<div class="attr">— Jeff Berleth</div></div><div class="quote">&#8220;I play defense, so I'm constantly blocking shots and I'm getting dinged up with bruises all over the place.&#8221;<div class="attr">— Jeff Berleth</div></div><div class="quote">&#8220;I'm just trying to emulate things that I think feel like they'd make a difference on the ice.&#8221;<div class="attr">— Jeff Berleth</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>"Effort without structure is just expensive guessing"</li><li>The guy who already has determination — he just needs the blueprint</li><li>Playing up in leagues = ambition anchor (D → C2 → C1 in 3 years)</li><li>Defenseman identity — blocking shots, grinding — physical proof in the story</li><li>Injury-managed training = no excuses, just adaptation</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">Self-directed exercises from Connor's YouTube, on-ice lessons from son's coach, split squats, medicine ball work, home gym training.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">Guesswork programming. No periodization. No sequencing around game days. Trying to emulate hockey movements without knowing why or when.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Trains regardless of how he feels. Has more commitment than most. But commitment without structure doesn't close the gap against players 10 years younger.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Keeps grinding. Keeps getting dinged. Never quite keeps up for a full game. Identity stays 'the guy who fights to keep up' instead of a consistent force on defense.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p6">
+  <div class="phead">
+    <div>
+      <div class="pname">Rich Vesey</div>
+      <div class="ptags"><span class="tag">BB+ League</span><span class="tag">6-Month Hiatus</span><span class="tag">Age 44</span><span class="tag">General Fitness Background</span><span class="tag">Negotiated Price</span><span class="tag">$1,200/4mo</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">Coming back from a 6-month hockey hiatus at 44. First skate back, couldn't keep pace within 10 minutes at BB+ level with guys in their early 20s — had never felt fatigue that early. Background in isolated muscle training. Doesn't enjoy extended stamina drills. Negotiated price from $1,400 to $1,200 for 4 months. Closed on the call.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Get back to 60-minute skating — doing the basics competently at a decent speed without legs giving out first.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li><em>"I've never felt that level of fatigue that early — not even at the first 10 minutes"</em></li><li>Legs give out before lungs — isolated muscle training built no functional leg endurance</li><li>General gym work has zero on-ice transfer</li><li>After 6 months off, conditioning collapsed faster than expected</li><li><em>"I genuinely have never really enjoyed extended stamina type drills"</em></li><li>Only 1 ice day per week — limited practice time</li><li>Used to have separation speed — now resigned to being smarter about positioning</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>Negotiated: <em>"What if we do four months for $1,200 — is that feasible?"</em> — Connor accepted</li><li>Confusion on bonuses between monthly vs. upfront</li><li>Typo on document (said '3 months' instead of '4') — brief confusion</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Leg-focused endurance specifically — legs give out first</li><li>Schedule flexibility — gym days are 'case by case'</li><li>Bonuses (edge work, hip/shoulder, rotational power) — asked specifically</li><li>Clear structure vs. his current unstructured approach</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody"><em>"That last Wednesday was sort of eye-opening where I'm like, okay, I've fallen behind."</em> Playing BB+ at 44 after a 6-month break — can't keep pace for even 10 minutes. Immediate action after that session.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>Isolated muscle training — chest/back/arms, legs (squats, leg press, hack squats)</li><li>Occasional sled work</li><li>Air bike intervals — unstructured, no progressive overload</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">Negotiated. Asked for $1,200 for 4 months vs. $1,400. Connor accepted. Not resistant to the investment — probed for flexibility. Monthly felt too open-ended.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Solo. Quick close after negotiation resolved. Paid on the call. Logistical app setup questions at the end — compliant and engaged.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;It wasn't even like I was there for the first 10 minutes. Keeping up with the pace of play was almost from the immediate get-go — I've never felt that level of fatigue that early.&#8221;<div class="attr">— Rich Vesey</div></div><div class="quote">&#8220;The legs are really sort of like the first things giving out, even ahead of stamina.&#8221;<div class="attr">— Rich Vesey</div></div><div class="quote">&#8220;I don't need to take things any more seriously than where they are. I just want to have fun out there — but this past Wednesday was sort of eye-opening.&#8221;<div class="attr">— Rich Vesey</div></div><div class="quote">&#8220;I guess I'm just resigned to the fact that once upon a time I had almost separation speed. I can still do it, but being smarter about position play is more the game now.&#8221;<div class="attr">— Rich Vesey</div></div><div class="quote">&#8220;I genuinely have never really enjoyed having to do extended stamina type drills.&#8221;<div class="attr">— Rich Vesey</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>The 6-month hiatus trap — every skate after a long break hits harder than expected</li><li>"You're not getting slower. Your system collapsed."</li><li>Legs-first failure pattern — why isolated training doesn't transfer to ice</li><li>Age 44 identity: smarter player who still wants to be physical — not just a survivor</li><li>The one bad skate that changes everything — the call to action moment</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">Isolated muscle training for years, unstructured air bike intervals, occasional sled work.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">Isolated training builds muscle in segments — nothing for functional hockey endurance. Air bike intervals have no structure or progressive overload. Effort is there, system isn't.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Was physically active throughout. Did reasonable gym work. Took 6 months off. First skate back, gassed in 10 minutes. Felt like he lost everything despite training consistently.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Gets progressively slower each season. Separation speed never comes back. Eventually has to move down to slower leagues. Becomes the guy who used to be fast.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p7">
+  <div class="phead">
+    <div>
+      <div class="pname">Dom Reale</div>
+      <div class="ptags"><span class="tag">Age 31</span><span class="tag">Post-Shoulder Surgery</span><span class="tag">5x/Week Pre-Injury</span><span class="tag">Toddler + Demanding Job</span><span class="tag">Budget Flex</span><span class="tag">$250/mo Stripped</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">31-year-old skating 5x/week before dislocated shoulder + labrum tear (left side, right partially torn). 6 weeks into a 6-month recovery. Can't skate. Chose to use the window to get ahead. Started hockey late (age 14). Hockey is his mental health anchor. Used the COVID break to come back stronger — wants to replicate that. Closed via text at $250/mo with nutrition and accountability removed due to wife's potential job change.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Return from surgery faster, stronger, and more agile than before. Fix slow first step and board battle capability.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li>Post-shoulder surgery — 6 weeks in, can't skate for several more months</li><li><em>"Hockey plays a huge role in my mental health and not having it right now is very tough"</em></li><li>First step is slow — limits board battles and ability to escape defenders</li><li><em>"My top end speed is decent, however my first steps are slow"</em></li><li>General training (YouTube) is <em>"boring and doesn't keep my attention"</em></li><li>Nutrition: <em>"surviving lol"</em> — toddler and demanding job</li><li>Right shoulder previously dislocated but never repaired</li><li>When speed is off, hockey is a 100% mental chain reaction</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>Wife potentially quitting/changing jobs — finances in flux</li><li>Wanted to know if nutrition could be removed to lower cost</li><li>Asked if accountability could be cut</li><li>Needed to review medical docs before confirming start date</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Program that works around active shoulder injury and recovery timeline</li><li>Use the injury window strategically — get ahead, not just maintain</li><li>Flexibility on program components given financial situation</li><li>Custom program adapting to what he can actually do right now</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">Shoulder surgery + 6-month recovery window. Previous COVID break resulted in a stronger return — wants to replicate it. Decision: sit and wait, or make the window count.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>Lifting and general YouTube workouts — 'boring and don't keep my attention'</li><li>Self-directed training without a plan</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">Needed price reduction — wife's job uncertainty. Accepted $250/month stripped version. Price-sensitive moment, not permanent condition. Would have paid more in different circumstances.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Text/messaging close. Fully bought in on methodology. Price was the only friction and it was situational. Moved once a lower-cost option was offered.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;Hockey plays a huge role in my mental health and not having it right now is very tough. It would mean a ton to get back to my normal self — maybe even better when I return from surgery.&#8221;<div class="attr">— Dom Reale</div></div><div class="quote">&#8220;Everything is much slower. And obviously hockey is a 100% mental game so anything that throws you off makes it exponentially worse.&#8221;<div class="attr">— Dom Reale</div></div><div class="quote">&#8220;I've worked my ass off for everything I've done in hockey and I usually translate that same effort to the real world.&#8221;<div class="attr">— Dom Reale</div></div><div class="quote">&#8220;The last time I had a huge break like this was Covid which sucked but I came back from it. Hockey means a lot to me and I know I can get everything back — I just want to do it quicker and better.&#8221;<div class="attr">— Dom Reale</div></div><div class="quote">&#8220;Lifting, general YouTube video — but workouts are boring and don't keep my attention.&#8221;<div class="attr">— Dom Reale (Application)</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>The injury window as an asset — use it to come back better, not just healed</li><li>Hockey and mental health — most emotionally loaded prospect type</li><li>Late starter identity — built everything through effort, has something to prove</li><li>COVID comeback precedent — he knows it's possible, just needs the system</li><li>"Your competition is still skating. What are you doing with your window?"</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">General lifting and YouTube workouts — doesn't stick because it's boring and unstructured.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">Boring, generic, no hockey-specificity, no progression system. Effort without direction — can't stick to it.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Has the work ethic and commitment but generic content doesn't hold attention. Needs a plan built for his exact situation.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Returns from surgery at baseline instead of improved. Misses the window. Comes back just as slow — or slower if rehab wasn't optimized.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p8">
+  <div class="phead">
+    <div>
+      <div class="pname">Victor Kam</div>
+      <div class="ptags"><span class="tag">Goalie</span><span class="tag">20yr Casual + 2yr Training</span><span class="tag">Mobility-Only Background</span><span class="tag">Home Gym</span><span class="tag">Closed Months Later</span><span class="tag">$1,400/4mo</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">Beer league goalie for 20 casual years, started actually training 2 years ago — exclusively mobility work. Wants hockey-specific strength and speed but budget was tight (work fitness credits renewing Feb/March). Didn't close on the original call. Came back months later when finances aligned. Closed at $1,400 for 4 months. Hooked by Connor's no-fluff content delivery.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Hold proper goalie butterfly position with strength for a full game, not just the first period. Maximize hockey longevity.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li>Can hold proper goalie position for one period — gets sloppy by period 2 and 3</li><li><em>"I know what proper feels like — legs and ass are burning — that's my cue. But I can't sustain it."</em></li><li>Only done mobility work for 2 years — no strength or speed training</li><li>Can't get workouts in during season (skating 3–4x/week on top of games)</li><li>In-season training is 'mostly for my back' — not hockey-specific</li><li>Doesn't know what to do for goalie-specific off-ice training</li><li>Skating is biggest downfall — push-off power limited by weak ankles</li><li>Records all games, sees the posture breakdown on video</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>Budget locked — fitness credits through work not renewing until Feb/March</li><li>Asked for stripped-down version (workout only, fewer check-ins)</li><li>Concerned about cost alongside goalie coaching investment for spring</li><li>Asked about paying for just one month — not viable for the program</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Goalie-specific customization (internal/external rotation, lateral push-off)</li><li>Strength in mobility ranges — not just flexibility without power</li><li>Hands-on coaching cadence — surprised him positively</li><li>Home gym accessible — full rack, kettlebells, access to full gym</li><li>In-season leg management awareness</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">Watching himself on game recordings. Seeing posture break down over the course of a game. Knowing exactly what proper feels like — and not being able to hold it.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>2 years of mobility work exclusively</li><li>Sandbag training — carries toddlers, 'dad strength'</li><li>Calisthenics (pull-ups, dips)</li><li>Deadlifts and squats pre-season</li><li>Goalie coach starting in spring</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">Genuinely constrained. Fitness credits are his primary mechanism. Monthly ($399) = entire fitness budget. Came back when credits renewed — clean close on second engagement.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Deliberate. Needed financial alignment. Strong values match with content style. Came back on his own. Fast close when budget opened.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;When I watch stuff on social media, it's always a little bit too much explaining about muscles and anatomy. I really don't care, I just want to know what to do to get better.&#8221;<div class="attr">— Victor Kam</div></div><div class="quote">&#8220;It comes down to my posture, how I'm on the ice, how I load my legs. That's something I don't have the strength to hold long enough when I play.&#8221;<div class="attr">— Victor Kam</div></div><div class="quote">&#8220;It's usually when my legs and ass are burning — that's my cue. I'm like, okay, this is proper.&#8221;<div class="attr">— Victor Kam</div></div><div class="quote">&#8220;I'll be a little surprised at how much hands on you are with the program — more than I expected actually.&#8221;<div class="attr">— Victor Kam</div></div><div class="quote">&#8220;I thought if I was going to work with you, I was going to start documenting that journey on my channel as well.&#8221;<div class="attr">— Victor Kam</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>No-fluff delivery = trust builder for this buyer type (anti-kinesiology-lecture)</li><li>Strength in mobility ranges — the missing link most goalies never address</li><li>Recording yourself = self-awareness hook — 'you already know what's wrong'</li><li>"Mobility without strength is a temporary fix"</li><li>Maximize longevity — goalies play longer, want to play better for longer</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">2 years of mobility work exclusively, sandbag training, calisthenics, deadlifts/squats pre-season, kettlebells.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">Mobility without strength doesn't hold under fatigue. Gets the range — loses it when tired. No progressively overloaded strength system. No goalie-specific periodization.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Records his games. Watches himself deteriorate in period 2. Knows exactly what proper feels like. Can't sustain it.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Plays another season where period 1 is good and everything degrades from there. Goalie coaching investment in spring doesn't compound because the physical base isn't there.</div></div>
+    </div>
+  </div>
+</div>
+<div class="profile" id="p9">
+  <div class="phead">
+    <div>
+      <div class="pname">Philip Morrison</div>
+      <div class="ptags"><span class="tag">Age 57→58</span><span class="tag">Started Skating at 54</span><span class="tag">Hip Replacement</span><span class="tag">Caretaker for Disabled Wife</span><span class="tag">DJ / Entertainment Co</span><span class="tag">Oklahoma</span></div>
+    </div>
+  </div>
+
+  <div class="sec"><div class="slabel">Summary</div><div class="sbody">Started skating at 54-55. Wife had a stroke one month in — took a year off. Got back, hired a skating coach, then had hip replacement surgery last December. Two years of actual skating experience. DJ and entertainment company owner. Full-time caretaker for disabled wife. Goal: simply be a presence and contributor on the ice. Bought a previous hockey course (couldn't finish — hip surgery + confusion). Closed.</div></div>
+
+  <div class="grid2">
+    <div class="col">
+      <div class="sec"><div class="slabel">Primary Desire</div><div class="sbody">Be a presence on the ice. Contribute to the team. Have people know he's out there. Consistent stops on both sides. Improve his snapshot.</div></div>
+      <div class="sec"><div class="slabel">Pain Points</div><div class="sbody"><ul><li>Snapshot <em>"very elusive"</em> — works without a puck, collapses with a puck, no power, no consistency</li><li><em>"I don't want to have to think. I've got way too much other stuff going on."</em></li><li>Full-time caretaker for disabled wife — all cooking, cleaning, logistics</li><li>Started skating at 54 — only 2 years of actual experience despite massive effort</li><li>Hip replacement surgery — 1 year before this call</li><li>Stops: great on one side, <em>"look like a beginner"</em> on the other</li><li>Has on-ice coaches but no off-ice hockey-specific program</li><li>Previous course: <em>"totally confused"</em> and couldn't complete it</li></ul></div></div>
+      <div class="sec"><div class="slabel">Objections</div><div class="sbody"><ul><li>No hard objections — came in genuinely to understand if this was worth the investment</li><li><em>"I really don't even know what to expect dollar-wise or result-wise — I just applied to get an idea"</em></li><li>Extensive context-building before program discussion — needed to feel understood first</li></ul></div></div>
+      <div class="sec"><div class="slabel">Buying Criteria</div><div class="sbody"><ul><li>Simplicity — doesn't want to think, has too much else going on</li><li>Hockey-specific customization, not one-size-fits-all</li><li>Works around caretaking schedule, entertainment company, and existing on-ice coaching</li><li>Coach who understands the late-starter journey and the life context</li><li>Equipment-aware (wanted to send photos of his setup)</li></ul></div></div>
+      <div class="sec"><div class="slabel">Trigger Event</div><div class="sbody">CTA from Connor's video — wasn't specifically searching. Content appeared consistently and he applied to see if it was worth it. Depth of personal context shared suggests someone looking for permission and understanding, not just information.</div></div>
+      <div class="sec"><div class="slabel">Alternatives Considered</div><div class="sbody"><ul><li>On-ice coaching from military veteran team coach (when available)</li><li>19-year-old Slovak player running drill sessions</li><li>Tony Greco hockey course — purchased, couldn't complete (hip surgery + confusion)</li><li>Self-directed general fitness research</li></ul></div></div>
+      <div class="sec"><div class="slabel">Pricing Sensitivity</div><div class="sbody">Entered with zero price expectations. No objection to pricing on the call. First-timer buyer type — just needed to understand what he'd be getting.</div></div>
+      <div class="sec"><div class="slabel">Decision Dynamics</div><div class="sbody">Unique profile — came in with life context first, hockey second. The call itself built the case. Acknowledgment of his wife's situation was a significant rapport moment.</div></div>
+    </div>
+    <div class="col">
+      <div class="sec"><div class="slabel">Top Quotes</div><div class="sbody"><div class="quote">&#8220;I don't want to have to think. I've got way too much other stuff going on. I just want someone to tell me what to do and when to do it.&#8221;<div class="attr">— Philip Morrison</div></div><div class="quote">&#8220;I don't care about being a leading scorer. I don't have a future in hockey. But while I'm still alive, I want people to know that I'm out there.&#8221;<div class="attr">— Philip Morrison</div></div><div class="quote">&#8220;The snapshot is very elusive for me. I've watched 100 hours or more of video and when I'm doing it without a puck I think I've got it — and then a puck gets in my way and it flutters.&#8221;<div class="attr">— Philip Morrison</div></div><div class="quote">&#8220;I'm going to be turning 58. That might sound old, but I'm in really, really good shape and I take care of myself.&#8221;<div class="attr">— Philip Morrison</div></div><div class="quote">&#8220;I want people to know that I'm out there.&#8221;<div class="attr">— Philip Morrison</div></div></div></div>
+      <div class="sec"><div class="slabel">Marketing Angles</div><div class="sbody"><ul><li>Late starter identity — enormous effort, limited time — make every year count</li><li>Simplicity as a product feature: 'tell me what to do, I'll do it'</li><li>The caretaker buyer — hockey is the one thing that's his</li><li>Identity over outcome: not chasing goals — chasing presence and contribution</li><li>The persistent learner who bought a course and couldn't finish it — needs more than a product</li></ul></div></div>
+      <div class="sec"><div class="slabel">What They've Tried</div><div class="sbody">Tony Greco hockey course (couldn't complete), on-ice coaching from two coaches, general internet fitness, self-directed non-hockey-specific gym work.</div></div>
+      <div class="sec"><div class="slabel">The Flaw in What They Tried</div><div class="sbody">Generic online courses have no customization for injury history, life schedule, or specific starting point. Confusion + hip surgery = abandoned. No coach to adapt the plan.</div></div>
+      <div class="sec"><div class="slabel">Their Frustration</div><div class="sbody">Extraordinary effort and life investment for 2 years of skating. Caretaking a disabled wife. Running a business. Hockey is the one place that's just for him. Snapshot won't work no matter how many videos he watches.</div></div>
+      <div class="sec"><div class="slabel">Consequence / Cost of Not Fixing</div><div class="sbody">Continues showing up to ice without the off-ice foundation that makes on-ice coaching stick. Snapshot stays inconsistent. After years of effort, still feels like the guy people can't quite tell is out there.</div></div>
+    </div>
+  </div>
+</div></div>
+<script>
+function show(i){
+  document.querySelectorAll('.nb').forEach((b,j)=>b.classList.toggle('active',j===i));
+  document.querySelectorAll('.profile').forEach((p,j)=>p.classList.toggle('active',j===i));
+}
+</script>
+</body>
+</html>
